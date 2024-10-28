@@ -64,7 +64,7 @@ function draw() {
 	if (sprite2.mouse.pressing()) image(Liar, 700, 10, 600, 400); 
 	if (sprite3.mouse.pressing()) image(image2, 400, 345, 300, 300);
 	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
-
+//working so far
 
 
 	//image(img1,0,0,windowWidth,windowHeight);
