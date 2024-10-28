@@ -4,10 +4,18 @@ let sprite1;
 let sprite2;
 let sprite3;
 let sprite4;
+let Wrong;
+let Liar
+let image2;
+let image3;
 
 function preload(){
-	img1 =loadImage("assets/Back.jpg")
-  }
+	img1 = loadImage("assets/Back.jpg");
+	Wrong = loadImage('assets/Wrong.jpg');
+	Liar = loadImage('assets/Liar.jpg');
+	image2 = loadImage('assets/Faceless.jpg');
+	image3 = loadImage('assets/Option.jpg');
+}
 
 function setup() {
 	new Canvas(windowWidth, windowHeight);
@@ -22,8 +30,8 @@ function setup() {
 	
 
 	sprite2 = new Sprite();
-	sprite2.width = 350;
-	sprite2.height = 50;
+	sprite2.width = 400;
+	sprite2.height = 100;
 	sprite2.x = 540;
 	sprite2.y = 250;
 	sprite2.image = 'assets/White2.jpg';
@@ -38,12 +46,13 @@ function setup() {
 	sprite3.scale = 0.25;
 
 	sprite4 = new Sprite();
-	sprite4.width = 100;
-	sprite4.height = 30;
+	sprite4.width = 200;
+	sprite4.height = 50;
 	sprite4.x = 725;
 	sprite4.y = 320;
 	sprite4.image = 'assets/Next.jpg'
 	sprite4.scale = 0.25;
+
 }
 
 function draw() {
@@ -51,9 +60,12 @@ function draw() {
 	text("Please Select The Race You Most identify With:", 300, 150, 350, 50)
 	textSize(20);
 
-	if (sprite1.mouse.pressing()) console.log ("press!");
-	if (sprite2.mouse.pressing()) console.log ("press White!");
-	if (sprite3.mouse.pressing()) console.log ("press other!");
+	if (sprite1.mouse.pressing()) image(Wrong, 100, 250, 600, 400);
+	if (sprite2.mouse.pressing()) image(Liar, 700, 10, 600, 400); 
+	if (sprite3.mouse.pressing()) image(image2, 400, 345, 300, 300);
+	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
+
+
 
 	//image(img1,0,0,windowWidth,windowHeight);
 
