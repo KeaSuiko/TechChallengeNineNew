@@ -65,6 +65,7 @@ function draw() {
 	if (sprite3.mouse.pressing()) image(image2, 400, 345, 300, 300);
 	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
 //working so far
+//i can't get it to push to gethub 
 
 
 	//image(img1,0,0,windowWidth,windowHeight);
