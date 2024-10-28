@@ -17,8 +17,8 @@ function setup() {
 	sprite1.height = 50;
 	sprite1.x = 540;
 	sprite1.y = 200;
-	sprite1.image = 'assets/Asain2.jpg';
-	sprite1.scale = 0.25; 
+	sprite1.image = 'assets/Asian2.jpg';
+	sprite1.scale = 0.34; 
 	
 
 	sprite2 = new Sprite();
@@ -40,9 +40,10 @@ function setup() {
 	sprite4 = new Sprite();
 	sprite4.width = 100;
 	sprite4.height = 30;
-	sprite4.x = 725
-	sprite4.y = 320
-
+	sprite4.x = 725;
+	sprite4.y = 320;
+	sprite4.image = 'assets/Next.jpg'
+	sprite4.scale = 0.25;
 }
 
 function draw() {
