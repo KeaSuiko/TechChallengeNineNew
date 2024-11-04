@@ -1,4 +1,3 @@
-//let ball;
 let img1;
 let sprite1;
 let sprite2;
@@ -6,28 +5,22 @@ let sprite3;
 let sprite4;
 let otherimages = [];
 let numoimages = 3; 
-let asianimages = [];
-let numaimages = 3;
-let whiteimages = [];
-let numwImages = 3;
-let Wrong;
-let Liar
-let image2;
-let image3;
 let othercountdown;
 let randoImgo;
-let whitecountdown;
-let randoImgw;
+let asianimages = [];
+let numaimages = 3;
 let asiancountdown;
 let randoImga;
+let whiteimages = [];
+let numwImages = 3;
+let whitecountdown;
+let randoImgw;
 let nextcountdown;
+let image3;
 
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
-	Wrong = loadImage('assetsfolder/Wrong.jpg');
-	Liar = loadImage('assetsfolder/Liar.jpg');
-	image2 = loadImage('assetsfolder/Faceless.jpg');
 	image3 = loadImage('assetsfolder/Option.jpg');
 
 	 let cother1 = loadImage('assetsfolder/cother1.png'); 
