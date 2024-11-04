@@ -10,11 +10,11 @@ let image2;
 let image3;
 
 function preload(){
-	img1 = loadImage("assets/Back.jpg");
-	Wrong = loadImage('assets/Wrong.jpg');
-	Liar = loadImage('assets/Liar.jpg');
-	image2 = loadImage('assets/Faceless.jpg');
-	image3 = loadImage('assets/Option.jpg');
+	img1 = loadImage("assetsfolder/Back.jpg");
+	Wrong = loadImage('assetsfolder/Wrong.jpg');
+	Liar = loadImage('assetsfolder/Liar.jpg');
+	image2 = loadImage('assetsfolder/Faceless.jpg');
+	image3 = loadImage('assetsfolder/Option.jpg');
 }
 
 function setup() {
@@ -25,7 +25,7 @@ function setup() {
 	sprite1.height = 50;
 	sprite1.x = 540;
 	sprite1.y = 200;
-	sprite1.image = 'assets/Asian2.jpg';
+	sprite1.image = 'assetsfolder/Asian2.jpg';
 	sprite1.scale = 0.34; 
 	
 
@@ -34,7 +34,7 @@ function setup() {
 	sprite2.height = 100;
 	sprite2.x = 540;
 	sprite2.y = 250;
-	sprite2.image = 'assets/White2.jpg';
+	sprite2.image = 'assetsfolder/White2.jpg';
 	sprite2.scale = 0.25;
 
 	sprite3 = new Sprite();
@@ -42,7 +42,7 @@ function setup() {
 	sprite3.height = 50;
 	sprite3.x = 540;
 	sprite3.y = 300;
-	sprite3.image = 'assets/Other2.jpg';
+	sprite3.image = 'assetsfolder/Other2.jpg';
 	sprite3.scale = 0.25;
 
 	sprite4 = new Sprite();
@@ -50,7 +50,7 @@ function setup() {
 	sprite4.height = 50;
 	sprite4.x = 725;
 	sprite4.y = 320;
-	sprite4.image = 'assets/Next.jpg'
+	sprite4.image = 'assetsfolder/Next.jpg'
 	sprite4.scale = 0.25;
 
 }
