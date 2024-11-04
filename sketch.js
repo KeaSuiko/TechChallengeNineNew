@@ -11,6 +11,7 @@ let Liar
 let image2;
 let image3;
 let othercountdown;
+let randoImgo;
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
@@ -67,7 +68,7 @@ function draw() {
 	background(img1);
 	text("Please Select The Race You Most identify With:", 300, 150, 350, 50)
 	textSize(20);
-	let randoImgo = random(otherimages)
+	//let randoImgo = random(otherimages)
 
 	if (othercountdown > 0) {
 		image(randoImgo, 400, 345, 300, 300);
@@ -77,6 +78,7 @@ function draw() {
 	if (sprite1.mouse.pressing()) image(Wrong, 100, 250, 600, 400);
 	if (sprite2.mouse.pressing()) image(Liar, 700, 10, 600, 400); 
 	if (sprite3.mouse.released()) {othercountdown = 240;
+		randoImgo = random(otherimages);
 	}
 	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
 //working so far
