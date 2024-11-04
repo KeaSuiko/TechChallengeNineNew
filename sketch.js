@@ -1,13 +1,16 @@
-let ball;
+//let ball;
 let img1;
 let sprite1;
 let sprite2;
 let sprite3;
 let sprite4;
+let otherimages = [];
+let numoimages = 3; 
 let Wrong;
 let Liar
 let image2;
 let image3;
+let othercountdown;
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
@@ -15,6 +18,11 @@ function preload(){
 	Liar = loadImage('assetsfolder/Liar.jpg');
 	image2 = loadImage('assetsfolder/Faceless.jpg');
 	image3 = loadImage('assetsfolder/Option.jpg');
+
+	 let cother1 = loadImage('assetsfolder/cother1.png'); 
+	 let cother2 = loadImage('assetsfolder/cother2.png');
+	 let cother3 = loadImage('assetsfolder/cother3.png');
+	 otherimages = [cother1, cother2, cother3];
 }
 
 function setup() {
@@ -59,10 +67,17 @@ function draw() {
 	background(img1);
 	text("Please Select The Race You Most identify With:", 300, 150, 350, 50)
 	textSize(20);
+	let randoImgo = random(otherimages)
 
+	if (othercountdown > 0) {
+		image(randoImgo, 400, 345, 300, 300);
+		othercountdown--;
+	}
+	
 	if (sprite1.mouse.pressing()) image(Wrong, 100, 250, 600, 400);
 	if (sprite2.mouse.pressing()) image(Liar, 700, 10, 600, 400); 
-	if (sprite3.mouse.pressing()) image(image2, 400, 345, 300, 300);
+	if (sprite3.mouse.released()) {othercountdown = 240;
+	}
 	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
 //working so far
 //i can't get it to push to gethub 
