@@ -6,12 +6,22 @@ let sprite3;
 let sprite4;
 let otherimages = [];
 let numoimages = 3; 
+let asianimages = [];
+let numaimages = 3;
+let whiteimages = [];
+let numwImages = 3;
 let Wrong;
 let Liar
 let image2;
 let image3;
 let othercountdown;
 let randoImgo;
+let whitecountdown;
+let randoImgw;
+let asiancountdown;
+let randoImga;
+let nextcountdown;
+
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
@@ -24,6 +34,16 @@ function preload(){
 	 let cother2 = loadImage('assetsfolder/cother2.png');
 	 let cother3 = loadImage('assetsfolder/cother3.png');
 	 otherimages = [cother1, cother2, cother3];
+
+	 let casian1 = loadImage('assetsfolder/casian1.png');
+	 let casian2 = loadImage('assetsfolder/casian2.png');
+	 let casian3 = loadImage('assetsfolder/casian3.png');
+	 asianimages = [casian1, casian2, casian3];
+
+	 let cwhite1 = loadImage('assetsfolder/cwhite1.png');
+	 let cwhite2 = loadImage('assetsfolder/cwhite2.png');
+	 let cwhite3 = loadImage('assetsfolder/cwhite3.png');
+	 whiteimages = [cwhite1, cwhite2, cwhite3];
 }
 
 function setup() {
@@ -68,27 +88,38 @@ function draw() {
 	background(img1);
 	text("Please Select The Race You Most identify With:", 300, 150, 350, 50)
 	textSize(20);
-	//let randoImgo = random(otherimages)
 
 	if (othercountdown > 0) {
 		image(randoImgo, 400, 345, 300, 300);
 		othercountdown--;
 	}
+
+	if (whitecountdown > 0) {
+		image(randoImgw,700, 10, 600, 400);
+		whitecountdown--;
+	}
+
+	if (asiancountdown > 0) {
+		image(randoImga, 100, 250, 600, 400);
+		asiancountdown--;
+	}
+
+	if (nextcountdown > 0) {image(image3, 400, 345, 500, 200);
+		nextcountdown--;
+	}
 	
-	if (sprite1.mouse.pressing()) image(Wrong, 100, 250, 600, 400);
-	if (sprite2.mouse.pressing()) image(Liar, 700, 10, 600, 400); 
-	if (sprite3.mouse.released()) {othercountdown = 240;
+	if (sprite1.mouse.released()) {asiancountdown = 180;
+		randoImga = random(asianimages);
+	}
+		
+	if (sprite2.mouse.released()) {whitecountdown = 180;
+		randoImgw = random(whiteimages);
+		} 
+
+	if (sprite3.mouse.released()) {othercountdown = 180;
 		randoImgo = random(otherimages);
 	}
-	if (sprite4.mouse.pressing()) image(image3, 400, 345, 500, 200);
-//working so far
-//i can't get it to push to gethub 
 
+	if (sprite4.mouse.released()) {nextcountdown = 180;}
 
-	//image(img1,0,0,windowWidth,windowHeight);
-
-	//if (mouse.presses(sprite1)) {
-		//text("Nooo", 400, 400);
-		//textSize (73);
-	//}
 }
