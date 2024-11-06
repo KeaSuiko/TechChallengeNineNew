@@ -23,17 +23,17 @@ function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
 	image3 = loadImage('assetsfolder/Option.jpg');
 
-	 let cother1 = loadImage('assetsfolder/cother1.png'); 
-	 let cother2 = loadImage('assetsfolder/cother2.png');
+	 let cother1 = loadImage('assetsfolder/otherred.jpg'); 
+	 let cother2 = loadImage('assetsfolder/otherred2.jpg');
 	 let cother3 = loadImage('assetsfolder/cother3.png');
 	 otherimages = [cother1, cother2, cother3];
 
-	 let casian1 = loadImage('assetsfolder/casian1.png');
+	 let casian1 = loadImage('assetsfolder/asianred.jpg');
 	 let casian2 = loadImage('assetsfolder/casian2.png');
 	 let casian3 = loadImage('assetsfolder/casian3.png');
 	 asianimages = [casian1, casian2, casian3];
 
-	 let cwhite1 = loadImage('assetsfolder/cwhite1.png');
+	 let cwhite1 = loadImage('assetsfolder/whitered.jpg');
 	 let cwhite2 = loadImage('assetsfolder/cwhite2.png');
 	 let cwhite3 = loadImage('assetsfolder/cwhite3.png');
 	 whiteimages = [cwhite1, cwhite2, cwhite3];
@@ -93,7 +93,7 @@ function draw() {
 	}
 
 	if (asiancountdown > 0) {
-		image(randoImga, 100, 250, 600, 400);
+		image(randoImga, 100, 250, 400, 400);
 		asiancountdown--;
 	}
 
