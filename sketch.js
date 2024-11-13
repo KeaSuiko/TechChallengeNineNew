@@ -17,11 +17,13 @@ let whitecountdown;
 let randoImgw;
 let nextcountdown;
 let image3;
+let soundwhite;
 
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
 	image3 = loadImage('assetsfolder/Option.jpg');
+	soundwhite = loadSound('assetsfolder/white1.wav');
 
 	 let cother1 = loadImage('assetsfolder/otherred.jpg'); 
 	 let cother2 = loadImage('assetsfolder/otherred2.jpg');
@@ -89,7 +91,9 @@ function draw() {
 
 	if (whitecountdown > 0) {
 		image(randoImgw,700, 10, 600, 400);
+		play(soundwhite);
 		whitecountdown--;
+		
 	}
 
 	if (asiancountdown > 0) {
