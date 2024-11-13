@@ -18,12 +18,16 @@ let randoImgw;
 let nextcountdown;
 let image3;
 let soundwhite;
+let soundasian;
+let soundother;
 
 
 function preload(){
 	img1 = loadImage("assetsfolder/Back.jpg");
 	image3 = loadImage('assetsfolder/Option.jpg');
 	soundwhite = loadSound('assetsfolder/white1.wav');
+	soundasian = loadSound('assetsfolder/Asian.wav');
+	soundother = loadSound('assetsfolder/Other.wav');
 
 	 let cother1 = loadImage('assetsfolder/otherred.jpg'); 
 	 let cother2 = loadImage('assetsfolder/otherred2.jpg');
@@ -86,6 +90,7 @@ function draw() {
 
 	if (othercountdown > 0) {
 		image(randoImgo, 400, 345, 300, 300);
+		play(soundother);
 		othercountdown--;
 	}
 
@@ -98,6 +103,7 @@ function draw() {
 
 	if (asiancountdown > 0) {
 		image(randoImga, 100, 250, 400, 400);
+		play(soundasian)
 		asiancountdown--;
 	}
 
