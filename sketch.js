@@ -4,15 +4,15 @@ let sprite2;
 let sprite3;
 let sprite4;
 let otherimages = [];
-let numoimages = 3; 
+let numoimages = 5; 
 let othercountdown;
 let randoImgo;
 let asianimages = [];
-let numaimages = 3;
+let numaimages = 5;
 let asiancountdown;
 let randoImga;
 let whiteimages = [];
-let numwImages = 3;
+let numwImages = 5;
 let whitecountdown;
 let randoImgw;
 let nextcountdown;
@@ -29,20 +29,26 @@ function preload(){
 	soundasian = loadSound('assetsfolder/Asian.wav');
 	soundother = loadSound('assetsfolder/Other.wav');
 
-	 let cother1 = loadImage('assetsfolder/otherred.jpg'); 
-	 let cother2 = loadImage('assetsfolder/otherred2.jpg');
-	 let cother3 = loadImage('assetsfolder/cother3.png');
-	 otherimages = [cother1, cother2, cother3];
+	 let cother1 = loadImage('assetsfolder/other1final.JPG'); 
+	 let cother2 = loadImage('assetsfolder/other2final.JPG');
+	 let cother3 = loadImage('assetsfolder/other3final.png');
+	 let cother4 = loadImage('assetsfolder/other4final.png');
+	 let cother5 = loadImage('assetsfolder/other5final.png');
+	 otherimages = [cother1, cother2, cother3, cother4, cother5];
 
-	 let casian1 = loadImage('assetsfolder/asianred.jpg');
-	 let casian2 = loadImage('assetsfolder/casian2.png');
-	 let casian3 = loadImage('assetsfolder/casian3.png');
-	 asianimages = [casian1, casian2, casian3];
+	 let casian1 = loadImage('assetsfolder/asian1final.png');
+	 let casian2 = loadImage('assetsfolder/asian2final.png');
+	 let casian3 = loadImage('assetsfolder/asain3final.JPG');
+	 let casian4 = loadImage('assetsfolder/asain4final.png');
+	 let casian5 = loadImage('assetsfolder/asian5final.png');
+	 asianimages = [casian1, casian2, casian3, casian4, casian5];
 
-	 let cwhite1 = loadImage('assetsfolder/whitered.jpg');
-	 let cwhite2 = loadImage('assetsfolder/cwhite2.png');
-	 let cwhite3 = loadImage('assetsfolder/cwhite3.png');
-	 whiteimages = [cwhite1, cwhite2, cwhite3];
+	 let cwhite1 = loadImage('assetsfolder/white1ginal.png');
+	 let cwhite2 = loadImage('assetsfolder/white2final.JPG');
+	 let cwhite3 = loadImage('assetsfolder/white3fiinal.png');
+	 let cwhite4 = loadImage('assetsfolder/white4other.JPG');
+	 let cwhite5 = loadImage('assetsfolder/white5finall.png');
+	 whiteimages = [cwhite1, cwhite2, cwhite3, cwhite4, cwhite5];
 }
 
 function setup() {
@@ -89,20 +95,20 @@ function draw() {
 	textSize(20);
 
 	if (othercountdown > 0) {
-		image(randoImgo, 400, 345, 300, 300);
+		image(randoImgo, 400, 345, 500, 500);
 		play(soundother);
 		othercountdown--;
 	}
 
 	if (whitecountdown > 0) {
-		image(randoImgw,700, 10, 600, 400);
+		image(randoImgw,700, 10, 500, 500);
 		play(soundwhite);
 		whitecountdown--;
 		
 	}
 
 	if (asiancountdown > 0) {
-		image(randoImga, 100, 250, 400, 400);
+		image(randoImga, 100, 250, 500, 500);
 		play(soundasian)
 		asiancountdown--;
 	}
