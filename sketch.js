@@ -95,20 +95,20 @@ function draw() {
 	textSize(20);
 
 	if (othercountdown > 0) {
-		image(randoImgo, 600, 300, 400, 400);
+		image(randoImgo, 600, 400, 400, 400);
 		play(soundother);
 		othercountdown--;
 	}
 
 	if (whitecountdown > 0) {
-		image(randoImgw,700, 10, 500, 500);
+		image(randoImgw,750, 10, 400, 400);
 		play(soundwhite);
 		whitecountdown--;
 		
 	}
 
 	if (asiancountdown > 0) {
-		image(randoImga, 100, 250, 500, 500);
+		image(randoImga, 25, 200, 400, 400);
 		play(soundasian)
 		asiancountdown--;
 	}
