@@ -58,7 +58,7 @@ function setup() {
 	sprite1.width = 350;
 	sprite1.height = 50;
 	sprite1.x = 540;
-	sprite1.y = 200;
+	sprite1.y = 250;
 	sprite1.image = 'assetsfolder/Asian2.jpg';
 	sprite1.scale = 0.34; 
 	
@@ -67,7 +67,7 @@ function setup() {
 	sprite2.width = 400;
 	sprite2.height = 100;
 	sprite2.x = 540;
-	sprite2.y = 250;
+	sprite2.y = 355;
 	sprite2.image = 'assetsfolder/White2.jpg';
 	sprite2.scale = 0.25;
 
@@ -82,8 +82,8 @@ function setup() {
 	sprite4 = new Sprite();
 	sprite4.width = 200;
 	sprite4.height = 50;
-	sprite4.x = 725;
-	sprite4.y = 320;
+	sprite4.x = 700;
+	sprite4.y = 375;
 	sprite4.image = 'assetsfolder/Next.jpg'
 	sprite4.scale = 0.25;
 
@@ -91,11 +91,11 @@ function setup() {
 
 function draw() {
 	background(img1);
-	text("Please Select The Race You Most identify With:", 330, 175, 500, 100)
+	text("Please Select The Race You Most identify With:", 330, 185, 500, 100)
 	textSize(20);
 
 	if (othercountdown > 0) {
-		image(randoImgo, 1200, 400, 500, 500);
+		image(randoImgo, 600, 400, 500, 500);
 		//tint(255, 127);
 		play(soundother);
 		othercountdown--;
@@ -114,7 +114,7 @@ function draw() {
 		asiancountdown--;
 	}
 
-	if (nextcountdown > 0) {image(image3, 400, 345, 500, 200);
+	if (nextcountdown > 0) {image(image3, 355, 400, 500, 200);
 		nextcountdown--;
 	}
 	
