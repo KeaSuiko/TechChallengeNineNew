@@ -23,7 +23,7 @@ let soundother;
 
 
 function preload(){
-	img1 = loadImage("assetsfolder/Back.jpg");
+	img1 = loadImage("assetsfolder/backgroundfinal.jpg");
 	image3 = loadImage('assetsfolder/Option.jpg');
 	soundwhite = loadSound('assetsfolder/white1.wav');
 	soundasian = loadSound('assetsfolder/Asian.wav');
@@ -52,7 +52,7 @@ function preload(){
 }
 
 function setup() {
-	new Canvas(windowWidth, windowHeight);
+	new Canvas(1200,800);
 	displayMode('centered');
 	sprite1 = new Sprite();
 	sprite1.width = 350;
@@ -91,11 +91,12 @@ function setup() {
 
 function draw() {
 	background(img1);
-	text("Please Select The Race You Most identify With:", 300, 150, 350, 50)
+	text("Please Select The Race You Most identify With:", 330, 175, 500, 100)
 	textSize(20);
 
 	if (othercountdown > 0) {
-		image(randoImgo, 400, 345, 500, 500);
+		image(randoImgo, 1200, 400, 500, 500);
+		//tint(255, 127);
 		play(soundother);
 		othercountdown--;
 	}
