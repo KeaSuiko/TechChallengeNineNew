@@ -95,8 +95,7 @@ function draw() {
 	textSize(20);
 
 	if (othercountdown > 0) {
-		image(randoImgo, 600, 400, 500, 500);
-		//tint(255, 127);
+		image(randoImgo, 600, 300, 400, 400);
 		play(soundother);
 		othercountdown--;
 	}
